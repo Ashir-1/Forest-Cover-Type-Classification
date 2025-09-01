@@ -1,65 +1,54 @@
-🌲 #Forest Cover Type Classification
+# 🌲 Forest Cover Type Classification
 
-A machine learning project for predicting forest cover types (7 classes) using cartographic and environmental data.
-The system compares the performance of Random Forest and XGBoost classifiers on the UCI Covertype Dataset.
+A machine learning project that predicts **forest cover types (7 classes)** from cartographic and environmental data.  
+This project compares the performance of **Random Forest** and **XGBoost** classifiers on the **UCI Covertype Dataset**.
 
-#📊 Dataset
+---
 
-Source: UCI Covertype
+## 📊 Dataset
+- **Source**: [UCI Covertype Dataset](https://archive.ics.uci.edu/ml/datasets/covertype)  
+- **Samples**: 581,012  
+- **Features**: 54 (both numerical and categorical)  
+- **Target Variable**: Forest cover type (7 categories)
 
-Size: 581,012 samples
+---
 
-Features: 54 (mixed numerical & categorical)
+## ⚙️ Workflow
+1. **Data Loading** – Load the UCI Covertype dataset  
+2. **Preprocessing** – Standardize only the numerical features  
+3. **Splitting** – Train-test split (80% training, 20% testing)  
+4. **Model Training** – Random Forest & XGBoost for multi-class classification  
+5. **Evaluation** – Metrics: Accuracy, Precision, Recall (using a 20% holdout test set)  
+6. **Analysis** – Confusion matrices & feature importance visualization  
 
-Target: Forest cover type (7 classes)
+---
 
-#⚙️ Workflow
+## 🏋️ Training Setup
+- **Models**: Random Forest, XGBoost  
+- **Objective**: Multi-class classification  
+- **Validation**: 20% holdout test set  
+- **Metrics**: Accuracy, Precision, Recall  
 
-Data Loading – Import the UCI Covertype dataset
+---
 
-Preprocessing – Standardize numerical features
+## 📈 Results
+### 🔹 Random Forest
+- Confusion Matrix: `RF_confusion_matrix.png`  
+- Feature Importance: `RF_important_features.png`  
 
-Splitting – 80% training, 20% testing
+### 🔹 XGBoost
+- Confusion Matrix: `XGB_confusion_matrix.png`  
+- Feature Importance: `XGB_important_features.png`  
 
-Model Training – Random Forest & XGBoost (multi-class classification)
+---
 
-Evaluation – Accuracy, Precision, Recall on holdout set
+## 📦 Requirements
+Make sure you have the following installed:
 
-Analysis – Feature importance & confusion matrices
-
-#🏋️ Training Setup
-
-Models: Random Forest, XGBoost
-
-Task: Multi-class classification
-
-Validation: 20% holdout test set
-
-Metrics: Accuracy, Precision, Recall
-
-📈 Results
-Random Forest
-
-Confusion Matrix: RF_confusion_matrix
-
-Top Features: RF_important_features
-
-XGBoost
-
-Confusion Matrix: XGB_confusion_matrix
-
-Top Features: XGB_important_features
-
-🔧 Requirements
-
+```bash
 Python 3.12
-
 pandas
-
 scikit-learn
-
 xgboost
-
 matplotlib
-
 seaborn
