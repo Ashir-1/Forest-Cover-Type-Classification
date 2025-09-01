@@ -1,9 +1,9 @@
-🌲 Forest Cover Type Classification
+#🌲 Forest Cover Type Classification
 
 A machine learning project for predicting forest cover types (7 classes) using cartographic and environmental data.
 The system compares the performance of Random Forest and XGBoost classifiers on the UCI Covertype Dataset.
 
-📊 Dataset
+#📊 Dataset
 
 Source: UCI Covertype
 
@@ -13,7 +13,7 @@ Features: 54 (mixed numerical & categorical)
 
 Target: Forest cover type (7 classes)
 
-⚙️ Workflow
+#⚙️ Workflow
 
 Data Loading – Import the UCI Covertype dataset
 
@@ -27,7 +27,7 @@ Evaluation – Accuracy, Precision, Recall on holdout set
 
 Analysis – Feature importance & confusion matrices
 
-🏋️ Training Setup
+#🏋️ Training Setup
 
 Models: Random Forest, XGBoost
 
